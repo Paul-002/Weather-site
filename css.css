@@ -1,0 +1,195 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: 'Lato', sans-serif;
+}
+
+html {
+   font-size: 15px;
+} 
+
+body {
+   background-color: white;
+   overflow-y: scroll;
+}
+
+#container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   justify-content: space-around;
+   background: white;
+}
+
+section {
+   text-align: center;
+   border: 2px solid lightgray;
+   border-radius: 15px;
+   width: 40%;
+   min-width: 320px;
+   padding: 2%;
+   margin-top: 2%;
+}
+
+input {
+   padding: 2% 3%;
+   border: 2px solid #ccc; 
+   border-radius: 6px;
+   outline: none;
+   transition: 0.5s;
+   font-size: 1.1em;
+   width: 130px;
+}
+button {
+   background-color: white; 
+   transition-duration: 0.3s;
+   border: 2px solid #38B0DE;
+   cursor: pointer;
+   outline: none;
+}
+
+#go_top {
+   display: none;
+   position: fixed;
+   bottom: 90px;
+   right: 50px;
+   z-index: 99;
+   border-radius: 10px;
+   padding: 15px;
+   font-size: 1.5em;
+}
+
+#btn_today, #btn_five { 
+   border-radius: 10px;
+   padding: 2% 3%;
+   font-size: 1.1em;
+   margin-left: 2%;
+}
+
+button:hover {
+   background-color: #38B0DE;
+   color: white;
+}
+
+h1 {
+   margin-bottom: 4%;
+}
+
+input:focus {
+   border: 2px solid #38B0DE;
+}
+
+::placeholder {
+   color: #ccc;
+} 
+
+#prompt_today, #prompt_five {
+   width: 250px;
+   margin: 0 auto;
+   border-bottom: 2px solid red;
+   font-size: 1.1em;
+   padding: 3% 2% 1% 2%;
+}
+
+#weather_today > p, #weather_five > p {
+   width: 300px;
+   margin: 0 auto;
+   border-bottom: 2px solid orange;
+   font-size: 1.1em;
+   padding: 3% 2% 1% 2%;
+}
+
+#weather_today > div, #weather_five > div {
+   border-top: 2px solid #38B0DE;
+   margin-top: 5%;
+   padding: 5% 5% 0 5%;
+}
+
+#weather_today div p, #weather_five div p {
+   padding: 1.5%;
+}
+
+.color0 h1 span {
+   color: #9a00fa;
+}
+
+.color1 h1 span {
+   color: #068587;
+}
+
+.color2 h1 span {
+   color: rgb(180, 126, 43)
+}
+
+.color3 h1 span {
+   color: #F2B134;
+}
+
+.color4 h1 span {
+   color: #ED553B;
+}
+
+.color5 h1 span {
+   color: #00fa9a;
+}
+
+.color6 h1 span {
+   color: #00ddfa;
+}
+
+@media only screen and (max-device-width: 550px) {
+   
+   #container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+      background: white;
+   }
+
+   section {
+      border: 2px solid lightgray;
+      border-radius: 15px;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 3%;
+      margin-top: 10%;
+   }
+
+   input {
+      text-align: center;
+      width: 10em;
+      font-size: 2em;
+   }
+
+   h1 {
+      font-size: 3.5em;
+   }
+
+   #btn_today, #btn_five {
+      font-size: 2em;  
+   }
+
+   #prompt_five, #prompt_today {
+      width: 50%;
+      font-size: 2em;
+   }
+
+   #weather_today > p, #weather_five > p {
+      width: 70%;
+      font-size: 2em;
+   }
+
+   #weather_today div p, #weather_five div p {
+      padding: 1%;
+   }
+
+   #go_top {
+      padding: 3.5%;
+      border-radius: 10px;
+      font-size: 2.3em;
+      bottom: 200px;
+   }
+}

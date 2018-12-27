@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Pogoda</title>
+  <meta name="description" content="Minimalist weather site. I wrote this project for exercise and learn more about API and JavaScript language">
+  <meta name="author" content="Paweł Gąsiorowski">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div id="container">
+    <section id="section_today">
+      <h1>Pogoda Teraz</h1>
+      <input id="city_today" type='text' placeholder="Wpisz miasto...">
+      <button id="btn_today" name='today'>Pobierz pogodę</button>
+      <p id="prompt_today" style='display: none;'>Podaj nazwę miejscowości!</p>
+      <div id="weather_today"></div>
+    </section>
+    <section id="section_five">
+      <h1>Pogoda pięciodniowa (co 3h)</h1>
+      <input id="city_five" type='text' placeholder="Wpisz miasto...">
+      <button id="btn_five"  name='five_days'>Pobierz pogodę</button>
+      <p id="prompt_five" style='display: none;'>Podaj nazwę miejscowości!</p>
+    <div id="weather_five"></div>
+    </section>
+    <button id="go_top"><img src="caret-arrow.png" height="16" width="16">Top</button>
+  </div>
+<script src="js.js"></script>
+</body>
+</html>
